@@ -3,8 +3,7 @@ import { connectDB } from "./data/database.js";
 import { config } from "dotenv";
 config()
 connectDB();
-
-app.listen(process.env.PORT, () => {
+app.listen(5000, () => {
   console.log(
     `Server is working on port:${process.env.PORT} in ${process.env.NODE_ENV} Mode`
   );

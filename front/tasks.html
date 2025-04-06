@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Tasks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My Tasks</h1>
+    <button id="logoutBtn">Logout</button>
+
+    <section class="task-form">
+      <h2>Create / Update Task</h2>
+      <form id="taskForm">
+        <input type="hidden" name="taskId" id="taskId" />
+        <input type="text" name="title" placeholder="Title" required />
+        <textarea name="description" placeholder="Description" required></textarea>
+        <input type="number" name="priority" placeholder="Priority (1-10)" min="1" max="10" />
+        <button type="submit">Add / Update Task</button>
+      </form>
+    </section>
+
+    <section class="task-list">
+      <h2>Task List</h2>
+      <div id="tasks"></div>
+    </section>
+  </div>
+
+  <script src="js/tasks.js"></script>
+</body>
+</html>
